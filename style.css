@@ -1,0 +1,40 @@
+/* Jacob Strider
+   Assignment-04
+   3/3/2026
+   CSC 372-01
+
+   This  is the CSS filee for the Rock, Paper, Scissors game, 
+   The file styles the body, the choices for the player, the computer's image, and the sections of the page.
+*/
+
+body {
+    font-family:'arial', sans-serif;
+    text-align: center;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.choice {
+    width: 120px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    padding: 5px;
+}
+
+.choice.selected {
+    border: 3px solid red;
+}
+
+#computer-image {
+    width: 120px;
+    margin-top: 20px;   
+}
+
+section {
+    margin-top: 30px
+}

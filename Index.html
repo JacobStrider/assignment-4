@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+
+<!--
+    Jacob Strider
+    Assignment-04   
+    3/3/2026
+    CSC 372-01
+
+    This is the index.html file for the rock, paper, scissors game.
+    The file identifies the structure of the webpage, including sections for the player's move, computer's move, result, and scoreboard. 
+    It also links to the CSS for styling and the JavaScript for game logic.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Rock Paper Scissors</h1>
+    <section id="Player-section">
+        <h2>Your Move</h2>
+        <div class="choices">
+            <figure>
+                <img src="Images/rock.png" alt="Rock" class="choice" data-choice="rock">
+                <figcaption>Rock</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/paper.png" alt="Paper" class="choice" data-choice="paper">
+                <figcaption>Paper</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/scissors.png" alt="Scissors" class="choice" data-choice="scissors">
+                <figcaption>Scissors</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="Compute-section">
+        <h2>Computer's Move</h2>
+        <img id="computer-image" src="Images/question.png" alt="Computer's Move">
+    </section>
+
+    <section id="Result-section">
+        <h2>Result</h2>
+        <p id="result-text">Make your move!</p>
+    </section>
+
+    <section id="score-section">
+        <h2>Scoreboard</h2>
+
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+        <p>Ties: <span id="ties">0</span></p>
+
+        <button id="reset-button">Reset Score</button>
+    </section>
+
+    <script src="Script.js"></script>
+</body>
+</html>
